@@ -19,20 +19,33 @@
     height: 200px;
     width: auto;
     margin-left: 200px;
+
     /* Your code here */
+    transition: transform 2s;
 }
 
-/* Create astronaut hover animation here
-
+/* Create astronaut hover animation here*/
+.astronaut_svg{
+    transform: translate(100px);
+}
 /* ======= BONUS ======= */
 
 .earth_svg {
     height: 200px;
     width: auto;
     margin-left: 300px;
-    /* Your animation here
+    /* Your animation here */
+    animation: spin;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
 }
 
 @keyframes spin {
-    /* Set up your keyframe animation here
+    /* Set up your keyframe animation here */
+    from{
+        transform: rotate(0deg);
+    }
+    to{transform: rotate(360deg);}
+
 }
