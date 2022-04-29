@@ -35,10 +35,11 @@
     width: auto;
     margin-left: 300px;
     /* Your animation here */
-    animation: spin;
+    /* animation: spin;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-duration: 2s;
+    animation-duration: 2s; */
+    animation: infinite linear 2s spin;
 }
 
 @keyframes spin {
